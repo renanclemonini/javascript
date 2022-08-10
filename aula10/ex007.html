@@ -22,9 +22,9 @@
         function somar(){
             var tn1 = document.querySelector('input#txtn1')
             var tn2 = document.querySelector('input#txtn2')
-            var res = document.querySelector('res')
-            var n1 = Number(tn1.ariaValueText)
-            var n2 = Number(tn2.ariaValueText)
+            var res = document.querySelector('div#res') // faltou configurar div#res (feito no senai em 10/08)
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
             var s = n1 + n2
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
         }
