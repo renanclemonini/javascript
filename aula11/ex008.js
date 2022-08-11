@@ -1,4 +1,8 @@
-var vel = 60.5
-console.log(`A velocidade do seu carro é ${vel}Km/h`)
+var país = 'Espanha'
+console.log(`Vivendo em ${país}`)
 
-console.log(`Dirija com cinto de segurança!`)
+if (país == 'Brasil'){
+    console.log('Você é Brasileiro!')
+}else {
+    console.log('Você é Estrangeiro!')
+}
