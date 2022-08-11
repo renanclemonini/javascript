@@ -5,7 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IMC</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        h1, h2{
+            color: lightgray;
+        }
+
+        .input_area{
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .container{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button{
+            height: 3em;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="area">
@@ -19,9 +41,29 @@
                 <h2>Peso</h2>
                 <input type="number" id="peso">
             </div>
-            <button>Calcular</button>
+            <button onclick="calculate()">Calcular</button>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script>
+        function calculate(){
+            var altura = document.getElementById('altura').value
+            var peso = document.getElementById('peso').value
+
+            var imc = peso / altura ** 2
+            if(imc<18.5){
+                alert(`Você esta com Peso Baixo, IMC = ${imc}`)
+            }else if(imc>=18.5&&imc<=24.9){
+                alert(`Você esta com Peso Normal, IMC = ${imc}`)
+            }else if(imc>=25&&imc<=29.9){
+                alert(`Você esta com Sobrepeso, IMC = ${imc}`)
+            }else if(imc>=30&&imc<=34.9){
+                alert(`Você esta com Obesidade Grau 1, IMC = ${imc}`)
+            }else if(imc>=35&&imc<=39.9){
+                alert(`Você esta com Obesidade Grau 2, IMC = ${imc}`)
+            }else if(imc>=40){
+                alert(`Você esta com Obesidade Grau 3, IMC = ${imc}`)
+            }
+        }
+    </script>
 </body>
 </html>
