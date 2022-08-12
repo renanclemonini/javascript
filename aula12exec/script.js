@@ -4,7 +4,7 @@ function carregar(){
     var sds = document.getElementById('sds')
     var data = new Date()
     var hora = data.getHours()
-
+    
     msg.innerHTML = `Agora são ${hora} horas!`
     
 
@@ -16,7 +16,7 @@ function carregar(){
     }else if(hora >= 6 && hora < 12){
         // BOM DIA!
         img.src = 'imagens/fotomanha.png'
-        document.body.style.background = '#bdd5df'
+        document.body.style.background = '#afa39c'
         sds.innerHTML = 'Bom dia!'
     }else if (hora >= 12 && hora <= 18){
         // BOA TARDE
