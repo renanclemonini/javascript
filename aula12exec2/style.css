@@ -15,6 +15,11 @@ section{
     padding: 10px;
 }
 
+div > p{
+    display: inline;
+    font-weight: bold;
+}
+
 div{
     margin: 10px;
 }
