@@ -17,16 +17,12 @@ section{
 }
 
 div{
-    padding: 10px;
+    padding: 8px;
 }
 
 div > p{
-    display: inline;
-    font-weight: bold;
-}
-
-div#foto{
-    text-align: center;
+    font-weight: normal;
+    text-align: left;
 }
 
 footer{
