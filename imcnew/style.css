@@ -60,7 +60,7 @@ button:hover{
     cursor: pointer;
 }
 
-div#res{
+div#res, #cond{
     text-align: center;
     padding-bottom: 10px;
 }
