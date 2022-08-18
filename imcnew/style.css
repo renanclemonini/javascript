@@ -38,11 +38,11 @@ input{
 }
 
 input#pes{
-    margin-left: 100px;
+    margin-left: 115px;
 }
 
 input#alt{
-    margin-left: 85px;
+    margin-left: 100px;
 }
 
 .but{
@@ -50,7 +50,7 @@ input#alt{
 }
 
 button{
-    width: 80%;
+    width: 340px;
     background-color: var(--cor-fundo-button);
     color: var(--cor-fundo-calc);
     font-size: 1.2em;
@@ -60,7 +60,8 @@ button:hover{
     cursor: pointer;
 }
 
-div#res, #cond{
+div#res{
+    font-weight: bold;
     text-align: center;
     padding-bottom: 10px;
 }
