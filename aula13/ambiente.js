@@ -1,5 +1,5 @@
 var c = 1
-while (c <= 3) {
-    console.log(`Passo ${c}`)
+do{
+    console.log(`Olá, mundo! Contagem ${c}`)
     c++
-}
+}while (c <= 10)
