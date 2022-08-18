@@ -70,3 +70,20 @@ footer{
     font-style: italic;
     text-align: center;
 }
+
+a{
+    color: black;
+    text-decoration: none;
+    text-transform: 1s;
+    transition-duration: 1s;
+}
+
+a:hover{
+    background-color: var(--cor-letra-calc);
+    color: white;
+    text-decoration: underline;
+    padding: 10px;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bold;
+}
