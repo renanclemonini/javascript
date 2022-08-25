@@ -1,0 +1,39 @@
+body{
+    background-color: gainsboro;
+}
+
+div.container{
+    background-color: lightblue;
+    width: 170px;
+    margin: auto;
+    border: 5px solid black;
+}
+
+div.inputContainer{
+    background-color: blue;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    justify-content: center;
+}
+
+input#dec1{
+    height: 50px;
+    width: 100px;
+    margin: auto;
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+div.outputContainer{
+    background-color: yellow;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+}
