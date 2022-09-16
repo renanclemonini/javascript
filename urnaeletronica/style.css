@@ -13,7 +13,7 @@ header{
 
 main{
     background-color: lightgray;
-    width: 300px;
+    width: 600px;
     margin: auto;
     display: flex;
     padding: 10px;
@@ -21,31 +21,44 @@ main{
 
 section.visor{
     border: 1px solid black;
-    width: 150px;
-    height: 200px;
+    width: 600px;
+    height: 300px;
+    margin-right: 10px;
+    text-align: center;
 }
 
-#numeros{
+.num{
+    width: 600px;
     display: grid;
-    font-size: 2em;
-    border: 1px solid black;
-    padding: 10px;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-content: center;
+}
+
+#zero{
+    background-color: lightgray;
+    border: none;
 }
 
 #branco{
     background-color: white;
     font-weight: bold;
+    width: 65px;
     border: 1px solid black;
 }
 
 #cancela{
     background-color: red;
     font-weight: bold;
+    width: 65px;
     border: 1px solid black;
 }
 
 #confirma{
     background-color: green;
     font-weight: bold;
+    width: 70px;
     border: 1px solid black;
 }
