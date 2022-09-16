@@ -1,0 +1,26 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font: normal 1em arial;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    background-color: lightgray;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+}
+
+section.visor{
+    border: 1px solid black;
+    width: 150px;
+    height: 200px;
+}
