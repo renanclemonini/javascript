@@ -25,6 +25,7 @@ section.visor{
     height: 300px;
     margin-right: 10px;
     text-align: center;
+    background-color: white;
 }
 
 .num{
