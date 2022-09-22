@@ -6,6 +6,7 @@ function contar(){
 
     if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
         alert('[ERRO] Faltam dados!')
+        // alerta de erro que faltam dados
     } else {
         res.innerHTML = 'Contando: '
         let i = Number(ini.value)
@@ -16,16 +17,16 @@ function contar(){
             p = 1
         }
         if (i < f){
+            // contagem crescente
             for(let c = i; c <= f; c += p){
                 res.innerHTML += ` ${c} \u{1F449} `
             }
         } else {
+            // contagem regressiva
             for(let c = i; c >= f; c -= p){
                 res.innerHTML += `${c} \u{1F449}`
             }
         }
-        res.innerHTML += `\u{1f3c1}`
-        
+        res.innerHTML += `\u{1f3c1}` 
     }
-
 }
