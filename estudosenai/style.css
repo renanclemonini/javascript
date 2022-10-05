@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+}
+
+:root{
+    --corheader: rgb(4, 4, 238);
+    --corbody: rgb(221, 221, 20);
+    --corfooter: rgb(31, 207, 31);
+}
+
+body{
+    background-color: var(--corbody);
+}
+
+header{
+    background-color: var(--corheader);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+main{
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+main > p{
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+h2 > a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--corfooter);
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    border-top: 2px solid black;
+}

@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+.video1{
+    text-align: center;
+    width: 100%;
+}
+
+iframe{
+    border: 2px solid white;
+}
+
+h1 > a{
+    color: lime;
+    text-decoration: none;
+}
