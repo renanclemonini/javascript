@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 de JS</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1{
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        console.log('teste de paridade');
+        
+        //definição da função
+        function par(n){
+            if(n % 2 == 0)
+                return ("par");
+            else return ("impar");
+        }
+
+        function outra(){
+            //document.write(`O numero é ${par(38)}`);
+            //document.getElementById('123').innerHTML = 'Olá mundo'
+            document.getElementById('456').innerHTML = (`O numero ${n} é ${par()}`);
+        }
+
+        function maisuma(){
+            let num = document.getElementById('123');
+            n = Number(num);
+            document.getElementById('456')
+        }
+    </script>
+</head>
+<body>
+    <h1 id="1">Página</h1>
+    <!-- <p id="123">Paragrafo</p> -->
+    <input type="text" name="" id="123" placeholder="insira um numero">
+    <p id="456">Outro Paragrafo</p>
+    <button onclick="outra()">Mude o paragrafo 1</button>
+    <br>
+    <script>
+        // testando e executando a função
+        par(54);
+        par(132);
+        par(35);
+        par(238);
+        outra();
+        maisuma();
+    </script>
+</body>
+</html>
