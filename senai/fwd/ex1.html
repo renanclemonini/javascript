@@ -5,33 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo 1</title>
-    <style>
-        h1{
-            text-align: center;
-        }
-
-        .tabela{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        table{
-            border-collapse: collapse;
-            margin: 20px;
-        }
-
-        th, td{
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-
-        input{
-            text-align: center;
-        }
-
-    </style>
+    <link rel="stylesheet" href="ex1Style.css">
 </head>
 <body>
     <h1>Exemplo</h1>
@@ -67,54 +41,6 @@
             </tbody>
         </table>
     </div>
-    <script>
-        function par(n){
-            if (n % 2 == 0)
-                return ("Par");
-            else return ("Impar");
-        }
-
-        function botao1(){
-            let x = document.getElementById('escrever').value;
-            //console.log(x);
-            let y = Number(x);
-            //console.log(y);
-            document.getElementById('ler').innerHTML = par(y);
-        }
-
-        function limpar(){
-            document.getElementById('escrever').value = "";
-            document.getElementById('ler').innerHTML = "...";
-        }
-
-        function limparImc(){
-            document.getElementById('alt').value = "";
-            document.getElementById('pes').value = "";
-            document.getElementById('resImc').innerHTML = "IMC";
-            document.getElementById('situacaoImc').innerHTML = "Resultado do IMC";
-        }
-
-        function imc(){
-            var altura = (document.getElementById('alt').value)/100
-            var peso = document.getElementById('pes').value
-
-            var imc = (peso / altura ** 2).toFixed(2)
-            document.getElementById('resImc').innerHTML = imc;
-
-            if(imc<18.5){
-                document.getElementById('situacaoImc').innerHTML = 'Você esta com Peso Baixo'
-            }else if(imc>=18.5&&imc<=24.9){
-                document.getElementById('situacaoImc').innerHTML = 'Você esta com Peso Normal';
-            }else if(imc>=25&&imc<=29.9){
-                document.getElementById('situacaoImc').innerHTML = 'Você esta com Sobrepeso';
-            }else if(imc>=30&&imc<=34.9){
-                document.getElementById('situacaoImc').innerHTML = 'Você esta com Obesidade Grau 1';
-            }else if(imc>=35&&imc<=39.9){
-                document.getElementById('situacaoImc').innerHTML = 'Você esta com Obesidade Grau 2';
-            }else if(imc>=40){
-                document.getElementById('situacaoImc').innerHTML = 'Você esta com Obesidade Grau 3'
-            }
-        }
-    </script>
+    <script src="ex1Js.js"></script>
 </body>
 </html>
