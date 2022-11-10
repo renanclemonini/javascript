@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 1</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 3em;
+        }
+
+        .tabela{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: 20px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        input{
+            text-align: center;
+            font-size: 1em;
+        }
+
+    </style>
+    <script>
+        function par(n){
+            if (n % 2 == 0)
+                return ("Par");
+            else return ("Impar");
+        }
+
+        function botao1(){
+            let x = document.getElementById('escrever').value;
+            //console.log(x);
+            let y = Number(x);
+            //console.log(y);
+            document.getElementById('ler').innerHTML = par(y);
+        }
+
+        function limpar(){
+            document.getElementById('escrever').value = "";
+            document.getElementById('ler').innerHTML = "...";
+        }
+    </script>
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <div class="tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>Numero</th>
+                    <th>Botão</th>
+                    <th>Resultado</th>
+                    <th>Limpar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td ><input type="text" name="" id="escrever" placeholder="Insira um numero"></td>
+                <td><button onclick="botao1()">OK</button></td>
+                <td id="ler">...</td>
+                <td id="limpar"><button onclick="limpar()">Limpar</button></td>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
