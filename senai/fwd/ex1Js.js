@@ -7,7 +7,7 @@ function par(n){
 function botao1(){
     let x = document.getElementById('escrever').value;
     let y = Number(x);
-    document.getElementById('ler').innerHTML = par(y);
+    document.getElementById('ler').innerHTML = par(x);
 }
 
 function limpar(){
